@@ -7,27 +7,35 @@ body{
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
+    z-index: -1;
 }
 
-h1{
-    color: rgb(82, 23, 2);
-    text-decoration: underline;
+header{
+    margin-top: -20px;
+    margin-bottom: 10px;
+    border-radius: 15px;
+    padding: 5px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.856);
 }
 
 main{
-    margin-top: 100px;
+   
+    margin-top: 25px;
     text-align: center;
     margin-left: auto;
     margin-right: auto;
     background-color: rgba(255, 255, 255, 0.315);
     padding: 30px;
     width: max-content;
+    height: 815px;
     border-radius: 11px;
 }
 
 .quadrado{
     text-align: center;
-    width: 50px;
+    width: 55px;
+    height: 66px;
     color: rgb(241, 187, 70);
     background-color: rgb(241, 187, 70);
     display: inline-block;
@@ -45,12 +53,14 @@ main{
 }
 
 .painel-base{
-    background-color: white;
+    color: white;
+    background-color: #F44788;
     display: inline-block;
     padding: 20px;
     margin-top: 15px;
     width: 370px;
-    border-radius: 10px;
+    height: 110px;
+    border-radius: 100px;
 }
 
 button{
@@ -58,14 +68,14 @@ button{
     padding: 10px;
     border-radius: 5px;
     color: white;
-    background-color: orangered;
+    background-color: #129191;
 }
  
 button:hover{
     transition: 200ms;
-    color: orangered;
+    color: #19CACA;
     background-color: white;
-    border: solid 1px orangered;
+    border: solid 1px #19CACA;
     cursor: pointer;
 }
 
@@ -73,3 +83,14 @@ button:hover{
     margin-top: 20px;
     text-align: center;
 }
+
+/*Confugurar exibição de particulas*/
+#particles-container{ 
+    z-index: -1;
+    position: absolute; 
+    width: 100%; 
+    height: 100%; 
+    background-repeat: no-repeat; 
+    background-size: cover; 
+    background-position: 100% 100%; 
+  }

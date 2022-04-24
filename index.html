@@ -6,12 +6,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jogo da Velha</title>
     <link rel="stylesheet" href="./assets/css/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+    <script>
+        particlesJS.load('particles-container', './assets/particlesjs-config.json');
+    </script>
 </head>
+<!--Adicionar particulas-->
+<div id="particles-container"></div>
 <body>
     <main>
-        <h1>
-            Jogo da Velha
-        </h1>
+        <header>
+            <h1>
+                Jogo da Velha 
+            </h1>
+            <p>Feat</p>
+            <a href="https://fontmeme.com/pt/fonte-de-round-6/"><img src="https://fontmeme.com/permalink/220424/3656bb5d7111b8c52c6eac4a9429e06d.png" alt="fonte-de-round-6" border="0"></a>
+        </header>
         <div>
             <div id="1" class="quadrado" onclick="escolherQuadrado(this.id)">-</div> 
             <div id="2" class="quadrado" onclick="escolherQuadrado(this.id)">-</div>
